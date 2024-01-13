@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="shortcut icon" type="x-icon" href="tab-icon/about.png">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav>
+        <img src="img/logow.png" class="logo">
+        <h2>Info@Anime</h2>
+        
+        <ul class="navbar">
+            <a class="text" href="index.html">Home</a>
+            <a class="text" href="genre.html">Genre</a>
+            <a class="text" href="news.html">News</a>
+            <a class="text" href="about.html">About</a>
+        </ul>
+    </nav>
+
+    <div class="title">
+        <h2>ABOUT PAGE</h2>
+    </div>
+
+    <div class="content">
+        <div class="services">
+            <img src="img/services.jpg" class="serv">
+            <h3>SERVICES</h3>
+            <p>We provide our visitors enough informations, and important things to know on a certain show, before or after watching it.</p>
+        </div>
+
+        <div class="mission">
+            <img src="img/mission.png" class="miss">
+
+            <h3>MISSION</h3>
+            <p> Our website mission is to provide detailed information about a specific Anime or show.
+                <br>
+                The purpose of this informational website: content to help answer the questions of those visitors who are asking, and to provide solutions to the problems they're experiencing.<br> Informational content educates your audience and showcases your expertise.
+
+            </p>
+        </div>
+
+        <div class="user">
+            <img src="img/users.jpg" class="use">
+
+            <h3>END-USERS</h3>
+            <p>Our clients or target users are those people who watch anime shows, and wants to know more about anime shows and movies.</p>
+        </div>
+    </div>
+
+    <center>
+        <main>
+
+            <h2>Feedback Section</h2>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+                <div class="container">
+                    <h1>Name:</h1>
+                    <input type="text" value="" name="" id="name" class="info" placeholder="Name">
+    <br>
+    <br>
+                    <h1>Email:</h1>
+                    <input type="text" name="" value="" id="email" class="info" placeholder="Email">
+    <br>
+    <br>
+                    <h1>Contact No:</h1>
+                    <input type="text" name="" value="" id="no" class="info" placeholder="+63 123 4567 890">
+    <br>
+    <br>
+                    <h1>Feedback:</h1>
+                    <textarea name="" id="inquiry" aria-valuetext="" cols="30" rows="10" placeholder="Type your Feedback...." class="info"></textarea>
+    <br>
+    <br>
+                    <input type="button" value="Submit" class="sbutton" onclick="submit()">
+                </div>
+            </div>
+
+ 
+        </main>
+    </center>
+    
+
+    <footer>
+        <p>Copyright &copy;2022 Info@Anime. Designed By: Ash</p>
+    </footer>
+
+    <script>
+
+        function submit() {
+            
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var no = document.getElementById("no");
+            var inquiry = document.getElementById("inquiry");
+    
+            if (name.value != ""){
+                if (email.value != "") {
+                    if (no.value != "") {
+                        if (inquiry.value != "") {
+                            alert("Thank You For Your Feedback!!!\t"  + name.value);
+                        }else{alert("Input Your Feedback");} 
+                    }else{alert("Number is Empty");}
+                }else{alert("Email is Empty");}
+            }else {alert("Name is Empty");} 
+    
+        }
+    </script>
+
+
+</body>
+</html>

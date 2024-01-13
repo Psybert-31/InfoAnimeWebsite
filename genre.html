@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Genre</title>
+
+    <link rel="shortcut icon" type="x-icon" href="tab-icon/genre.png">
+    <link rel="stylesheet" href="genre.css">
+  </head>
+  <body>
+
+    <div class="nav">
+      <img src="img/logow.png" class="logo">
+      <h2 class="title">Info@Anime</h2>
+
+    
+      
+      <ul class="navbar">
+          <a class="text" href="index.html">Home</a>
+          <a class="text" href="genre.html">Genre</a>
+          <a class="text" href="news.html">News</a>
+          <a class="text" href="about.html">About</a>
+      </ul>
+  </div>
+
+  <div class="searchbar">
+    <input type="search" value="" id="search" placeholder=" Search anime name..."  onchange="openPage()">
+  </div>
+
+    <div class="slidershow middle">
+     
+      
+
+      <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+
+        <div class="slide s1">
+          <h1>SHONEN</h1>
+          <a href="shonen.html">
+            <button>Read More</button>
+          </a>
+          <a href="index.html">
+            <button>Back To Home</button>
+          </a>
+          <img src="genre/shonen.gif" alt="">
+        </div>
+        <div class="slide">
+          <h1>MECHA</h1>
+          <a href="mecha.html">
+            <button>Read More</button>
+          </a>
+          <a href="index.html">
+            <button>Back To Home</button>
+          </a>
+          <img src="gundam-00/3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <h1>COMEDY</h1>
+          <a href="comedy.html">
+            <button>Read More</button>
+          </a>
+          <a href="index.html">
+            <button>Back To Home</button>
+          </a>
+          <img src="genre/comedy.gif" alt="">
+        </div>
+        <div class="slide">
+          <h1>SUPERNATURAL</h1>
+          <a href="supernatural.html">
+            <button>Read More</button>
+          </a>
+          <a href="index.html">
+            <button>Back To Home</button>
+          </a>
+          <img src="genre/supernatural.gif" alt="">
+        </div>
+       
+      </div>
+
+      <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+      </div>
+    </div>
+
+    <footer>
+      <p>Copyright &copy;2022 Info@Anime. Designed By: Ash</p>
+  </footer>
+
+    <script>
+        function openPage() {
+            var x = document.getElementById("search").value;
+
+            if (x === "attack on titan" || x === "ATTACK ON TITAN") {
+                window.open("aot.html");
+            }
+
+            else if (x === "one piece" || x === "ONE PIECE") {
+                window.open("op.html");
+            }
+
+            else if (x === "jujutsu kaisen" || x=== "JUJUTSU KAISEN") {
+                window.open("jjk.html");
+            }
+
+            else if (x === "bleach" || x === "NARUTO") {
+                window.open("bleach.html");
+            }
+
+            else if (x === "demon slayer" || x === "DEMON SLAYER") {
+                window.open("demon.html");
+            }
+
+            else if (x === "code geass" || x=== "CODE GEASS") {
+                window.open("code-geass.html");
+            }
+
+            else if (x === "86" || x === "eighty six") {
+                window.open("86.html");
+            }
+
+            else if (x === "gundam 00" || x === "GUNDAM 00") {
+                window.open("gundam-00.html");
+            }
+
+            else if (x === "guilty crown" || x === "GUILTY CROWN") {
+                window.open("guilty-crown.html");
+            }
+
+            else if (x === "darling in the franxx" || x === "DARLING IN THE FRANXX") {
+                window.open("darling.html");
+            }
+
+            else if (x === "gintama" || x === "GINTAMA") {
+                window.open("gintama.html");
+            }
+
+            else if (x === "prison school" || x === "PRISON SCHOOL") {
+                window.open("prison.html");
+            }
+
+            else if (x === "grand blue" || x === "GRAND BLUE") {
+                window.open("blue.html");
+            }
+
+            else if (x === "saiki k" || x === "SAIKI K") {
+                window.open("saiki.html");
+            }
+
+            else if (x === "konosuba" || x === "KONOSUBA") {
+                window.open("konosuba.html");
+            }
+
+            else if (x === "death note" || x === "DEATH NOTE") {
+                window.open("death-note.html");
+            }
+
+            else if (x === "mob psycho 100" || x === "MOB PSYCHO 100") {
+                window.open("mob.html");
+            }
+
+            else if (x === "fate zero" || x === "FATE ZERO") {
+                window.open("fate-zero.html");
+            }
+
+            else if (x === "black butler" || x === "BLACK BUTLER") {
+                window.open("black-butler.html");
+            }
+
+            else if (x === "bungou stray dogs" || x === "BUNGOU STRAY DOGS") {
+                window.open("bungou.html");
+            }
+
+            else{
+                alert(" Not Found!! Anime is not included on the list..")
+            }
+
+        }
+    </script>
+  </body>
+</html>
